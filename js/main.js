@@ -104,7 +104,7 @@ console.log("Первое число:", first);
 console.log("Второе число:", second);
 console.log("Остальные число:", rest);
 */
-
+/*
 const arr1 = [1, 3, 4, 5];
 const arr2 = [1, 2, 6, 8];
 const combinedArr = [...arr1, ...arr2];
@@ -112,7 +112,6 @@ console.log(combinedArr);
 function findMax(...numbers) {
     return numbers.reduce((max, num) => num > max ? num : max);
 }
-
 console.log(findMax(5, 2, 3, 1, 7, 15, 1235));
 const obj1 = {
     name: "te",
@@ -124,3 +123,21 @@ const obj2 = {
 }
 const bothObj = { ...obj1, ...obj2 };
 console.log(bothObj);
+*/
+/*
+import { greet, add, PI } from "./utils.js";
+import { multiply as умножить } from "./utils.js";
+import * as Utils from "./utils.js";
+console.log("Модули");
+console.log(greet("Алексей"));
+console.log("5 + 3 = ", add(5, 3));
+console.log("Значение PI:", PI);
+console.log("4 * 7 = ", умножить(4, 7));
+console.log(Utils.greet("Мария"));
+console.log("Умножение:", Utils.multiply(3, 9));
+*/
+
+import * as Maths from "./math.js";
+console.log("Квадрат числа 5: ", Maths.square(5));
+console.log("Куб числа 5: ", Maths.cube(5));
+console.log("Число Е : ", Maths.E);
