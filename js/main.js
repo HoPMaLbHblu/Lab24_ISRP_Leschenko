@@ -47,7 +47,7 @@ function printUser({ name, age, city }) {
 printUserOld(user);
 console.log();
 printUser(user);*/
-const product = {
+/*const product = {
     name: "apple",
     price: 100,
     category: "fruits",
@@ -61,3 +61,66 @@ function printProduct({ name, price, category, inStock }) {
     console.log(`В наличии? : ${inStock}`);
 }
 printProduct(product);
+*/
+/*
+console.log("Spread для массивов");
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2];
+console.log("Объединённый массив: ", combined);
+const copy = [...arr1];
+console.log("Copy array: ", copy);
+const extended = [0, ...arr1, 7, 8];
+console.log("Расширенный массив: ", extended);
+*/
+/*
+console.log("Spread для объектов");
+const person = {
+    name: "Иван",
+    age: 30,
+}
+const address = {
+    city: "Санкт-Петербург",
+    street: "Невский проспект",
+}
+const fullInfo = { ...person, ...address };
+console.log("Полная информация:", fullInfo);
+const personCopy = { ...person };
+console.log("Копия объекта:", personCopy);
+const updated = { ...person, age: 31, occupation: "Developer" };
+console.log("Обновлённый объект:", updated);
+*/
+/*
+console.log("Rest оператор");
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+console.log("Сумма 1,2,3:", sum(1, 2, 3));
+console.log("Сумма 1,2,3,4,5:", sum(1, 2, 3, 4, 5));
+
+const numbers = [10, 20, 30, 40, 50];
+const [first, second, ...rest] = numbers;
+console.log("Первое число:", first);
+console.log("Второе число:", second);
+console.log("Остальные число:", rest);
+*/
+
+const arr1 = [1, 3, 4, 5];
+const arr2 = [1, 2, 6, 8];
+const combinedArr = [...arr1, ...arr2];
+console.log(combinedArr);
+function findMax(...numbers) {
+    return numbers.reduce((max, num) => num > max ? num : max);
+}
+
+console.log(findMax(5, 2, 3, 1, 7, 15, 1235));
+const obj1 = {
+    name: "te",
+    age: 226,
+}
+const obj2 = {
+    city: "good",
+    weather: "bad",
+}
+const bothObj = { ...obj1, ...obj2 };
+console.log(bothObj);
